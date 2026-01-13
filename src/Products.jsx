@@ -13,7 +13,12 @@ const Products = () => {
     dispatch(getProducts());
   }, [dispatch]);
 
-  if (productState.loading) return <h2>Loading...</h2>;
+  if (productState.loading)
+    return (
+      <h2 className="h-screen flex items-center justify-center font-bold text-3xl">
+        Loading...
+      </h2>
+    );
   if (productState.error) return <h2>{productState.error}</h2>;
 
   return (
