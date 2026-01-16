@@ -1,0 +1,5 @@
+{
+    "ENVIRONMENT":  "development",
+    "APP_NAME":  "Async-thunk",
+    "API_BASE_URL":  "http://localhost:3000"
+}
